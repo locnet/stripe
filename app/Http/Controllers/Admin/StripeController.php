@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Links;
+use App\Payments;
 use Mail;
 
 class StripeController extends Controller
@@ -41,6 +42,7 @@ class StripeController extends Controller
         	// enlace de pago creado corectamente
         	// mandamos el email con los datos del pago
         	$this->sendPaymentEmail($validatedData['token']);
+
         	return view('admin.stripe.success', compact('link'));
         }
         return "excepcion";
@@ -49,7 +51,7 @@ class StripeController extends Controller
 
     public function makePayment($token,$email)
     {
-    	$link = Links::where('token','=',$token)->first();
+    	$link = Links::where('token',$token)->first();
 
     	if($link->count() > 0) {
     		dd($link);

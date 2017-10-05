@@ -136,7 +136,7 @@
                                              line-height: 25px; font-family: Helvetica, Arial, sans-serif;
                                              color: #666666;" class="padding-copy">
                                              
-                                             <a href="{{ url('admin/stripe/'.$link->token.'/'.$link->email) }}">enlace</a>.                                             
+                                             <a href="{{ url('/pagar/'.$link->token.'/'.$link->email) }}">enlace</a>.                                             
                                             </td>
                                         </tr>
                                         <tr>
@@ -144,7 +144,7 @@
 	                                            font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; 
 	                                            color: #666666;" class="padding-copy">
 	                                            Si el enlace no funciona copia y pega la siquiente direccion en tu navegador preferido.
-	                                            <p>{{ url('admin/stripe/'.$link->token.'/'.$link->email) }}.</p>
+	                                            <p>{{ url('/pagar/'.$link->token.'/'.$link->email) }}.</p>
                                             </td>
                                         </tr>
                                         

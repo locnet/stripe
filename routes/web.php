@@ -31,5 +31,7 @@ Route::middleware(['App\Http\Middleware\AdminMiddleware'])->group(function () {
     Route::get('/admin/stripe/nuevo', 'Admin\StripeController@index');
     Route::post('/admin/stripe/guardar', 'Admin\StripeController@store');
 
-    Route::get('/admin/stripe/pagar/{token}/{email}', 'Admin\StripeController@makePayment');
 });
+
+// pago
+Route::get('/pagar/{token}/{email}', 'Admin\StripeController@makePayment');

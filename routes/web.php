@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', 'TestController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// admin routes
+
+Route::middleware(['App\Http\Middleware\AdminMiddleware'])->group(function () {
+	
+    // admin	
+    Route::get('/admin','Admin\MainController@index');
+
+    // stripe
+    Route::get('/admin/stripe/nuevo', 'Admin\StripeController@index');
+    Route::post('/admin/stripe/guardar', 'Admin\StripeController@store');
+
+    Route::get('/admin/stripe/pagar/{token}/{email}', 'Admin\StripeController@makePayment');
+});

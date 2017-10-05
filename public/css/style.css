@@ -1,0 +1,719 @@
+/*************** ICON + FONTS ****************************/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+
+body {
+	font-family: 'Open Sans',sans-sherif;
+	line-height: 1.4;
+	x-overflow: hidden;
+	color: #222;
+	
+}
+/*--------------FONTS-----------------------*/
+h1,h2,h3,h4,h5,h6,p {
+	color: #8F8A85;
+}
+h3.price {
+	margin: -50px 0px 0px 0px;
+	background-color: #ffffff
+}
+.red {
+    color: #ff5e6b;
+}
+.blue {
+	color: #5bc0de;
+}
+.dark-blue {
+	color: #286090;
+}
+.white {
+	color: #ffffff;
+}
+.orange {
+	color: #ff8200;
+}
+.yellow {
+	color: #fffc16;
+}
+.dark-grey {
+	color: #4e4c4a;
+}
+.light-grey {
+	color: #dad7d4;
+}
+span.red {
+	color: #ff5e6b;
+}
+.last-of-type {
+	margin-bottom: 20px;
+}
+.roboto, .roboto-400,.roboto-700, .roboto-extra-big{
+    font-family: 'Roboto Slab',serif;
+    line-height: 1.8;
+}
+.roboto-300 {font-weight: 300}
+.roboto-400 {font-weight: 400}
+.roboto-700 {font-weight: 700}
+
+.roboto-extra-big {
+	font-weight: 700;
+	font-size: 10em;
+	line-height: 1;
+}
+.lato-extra-big {
+	font-size: 6em;
+	font-family: 'Lato';
+	font-weight: 400;
+}
+.lato-100,.lato-300,.lato-400 {
+	font-family: 'Lato';
+	line-height: 1.4;
+}
+.lato-400{font-weight: 400}
+.lato-300{font-weight: 300}
+.lato-100{font-weight: 100}
+
+.header .fa{
+	color: #fff;
+}
+.fa {
+	margin-right: 10px;
+	color: #5bc0de;
+}
+.fa-star, .fa-key{
+	margin-right: 0px;
+	margin-left: 1px;
+}
+.fa .fa-margin-left{
+	margin-left: 20px !important;
+}
+.fa-green {
+	color: #5cb85c;
+}
+.fa-red {
+	color: red;
+}
+.search-movil-container .fa-map-marker{
+	margin-right:2px;
+	margin-left: 15px;
+}
+.panel-title > .fa {
+	color: #ffffff;
+}
+.btn > .fa {
+	color: white;	
+	margin-right: 10px;
+}
+.btn > .fa-plus, .btn > .fa-minus {
+	margin: 0 5px;
+}
+.board-detail h5 .fa {
+	color: #fff;
+	margin-left: 10px;
+}
+
+/*************** NAV ****************/
+.navbar-brand > img{
+    height:80px;
+    margin-bottom: 20px;
+}
+.header {
+	background-color: #deb322;
+	width: 100%;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-toggle {
+	border-color: rgb(156, 108, 44);
+}
+.navbar-default .navbar-nav>li>a {
+	padding-bottom: 7px;
+	padding-top: 7px;
+	color: rgb(99, 69, 29);
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color:#AB834D;
+}
+.navbar-header, .navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:0px solid transparent;
+}
+
+.navbar-brand, .navbar-nav > li > a{
+	text-shadow: none;
+	color: #fff;
+}
+.navbar-default .navbar-nav>.active>a {
+	background-image: linear-gradient(to bottom, #986632 0, #7b5b36 100%);
+	color: #ffffff;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #ffffff;
+}
+li.active {
+	background-color: #05AB64;
+	color: #4c4c4c;
+}
+.nav>li>a:hover {
+	background-color: #995700;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color: none;
+}
+/************ SOCIAL NAV ***************/
+.social {
+	width:60%;
+    margin:0 auto;
+}
+
+/******************** CONTAINERS *****************/
+.search-form-container {
+	width: 100%;
+	padding: 40px 0 0px 0;
+	background: url(../images/sunglass.jpg ) no-repeat center top;
+}
+.full-page-container {
+	width: 100%;
+	background: url(../images/sevilla.jpg ) no-repeat center center;
+	min-height: 600px;
+	padding: 100px 30px 30px 30px;
+}
+#mainCarousel .container {
+	padding:0px;
+}
+.tours-container{
+	background: url(../images/blured.jpg) no-repeat top center;
+	background-color: #014a6b;
+	padding-bottom:60px;
+}
+.oferts-container {
+	background: url(../images/hojas.jpg) no-repeat top center;
+	background-color: #5f93cc;
+	padding-bottom:60px;
+}
+.tour-row{
+	background-color: #fff;
+	margin:20px 10px 20px 10px;
+}
+.tour-info{
+	background-color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	min-height: 40px;
+ }	
+.hotel-info {
+    padding: 15px 15px 10px 15px;	
+	margin-top: 0px;
+	border: 1px solid #c0c0c0;
+	border-top: 0px;
+}
+/**************** CAROUSEL ***********************/
+.carousel-caption {
+	background-color: rgba(97,99,102, 0.70);
+	padding: 0px;
+}
+.carousel-caption h2, .carousel-caption p {
+	color: #fff;
+}
+.carousel-caption h2 {
+	margin: 10px;
+}
+
+/********************* LOGIN / REGISTER ******************/
+.login{
+	margin-top: 20px;
+}
+
+/*************** FORMULARIOS *********************/
+.panel {
+	background-color: rgba(50, 55, 66, 0.95);
+}
+label {
+	color: #949494;
+	font-weight: 300;
+}
+.search-small-form {
+	background-color: #4d4f64;
+	width: 100%;
+}
+.search-small-form .control-label  label {
+	color: #fff;
+}
+.search-small-form input {
+	font-size: 12px;
+}
+#filter-menu .panel {
+	background-color: #4d4f64;
+	font-color: #fff;
+}
+.form-control {
+	border:1px solid #9e9e9e;
+	background-color: #9e9e9e;
+	color: #fbfbfb;
+}
+.form-control[readonly] {
+	background-color: #9e9393;
+}
+.input-group-addon {
+	background-color: #5AA499;
+	border: 1px solid #5AA499;
+}
+.input-group-addon .fa {
+    	margin-right: 0px;
+    	color: #ffffff;
+}
+.form-group{
+	margin-top: 10px;
+}
+.room {
+	background-color: rgba(101, 102, 110, 0.89);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: #c3bfbf;
+}
+.room .btn-success{
+	background-image: linear-gradient(to bottom,#9abfba 0,#5aa499 100%);
+	border: 1px solid #1a695d;
+}
+.room .btn-success:focus, .room .btn-success:hover {
+    background-color: #5aa499;
+}
+.addRoom {
+	margin-top: 24px;
+}
+#div_for_room_2, #div_for_room_3,
+#div_for_room_4, #div_for_room_5, 
+#div_for_room_5  .room_button,
+#ages_for_room_1, .child_0, .child_1, .child_2,
+#ages_for_room_2,#ages_for_room_3, 
+#ages_for_room_4, #ages_for_room_5 {
+    display: none;
+}
+#div_for_room_1 .room_buttons {display: inline-block;}
+
+
+
+/******************** SEARCH RESULT ****************/
+.search-results-bg{
+	background-color: #ececec;
+}
+.search-movil-container h3 {
+	margin-top: 10px;
+}
+.search-movil-container {
+    	margin: 5px 0px;
+        background-color: #fff;
+    }
+
+.search-movil-container .col-xs-4,
+.search-movil-container .col-md-4,
+.search-movil-container .col-xs-8,
+.search-movil-container .col-xs-12{
+    	padding: 0px;
+}  
+.img-hotel{
+	height: 110px;
+	margin-left: -15px;
+}
+#filter-button{
+	margin-right: 25px;
+	margin-left: 15px;
+}
+/*********** ACOMODACIONES HOTEL / PAGO **********************/
+.board {
+	background-color: #676161;
+	margin-bottom: 4px;
+	padding: 7px 0;
+}
+.board:last-of-type{
+		margin-bottom: 15px;
+}
+.board label,.board .control-label {
+	font-weight: 300;
+	color: #fff;
+}
+.board .form-horizontal .control-label {
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 110%;
+}
+.board-container {
+    background-color: #e5e5e5;
+    margin-bottom: 2px;
+}
+.board-container:first-of-type {
+	margin-top: 2px;
+}
+.board-container  .fa {
+	margin-right: 3px;
+	margin-left: 10px;
+}
+.board-price {
+	background-color:#ff5e6b;
+}
+button.no-style{
+	width:100%;
+	background-color: #ff5e6b;
+	padding:0px;
+	border:none;
+	height: 100%;
+}
+.social {
+	margin-bottom:15px;
+}
+#g-logout{
+	display:none;
+}
+.cc-img,.pay-button{
+	margin: 20px 0;
+}
+/******************** TOUR ***********************/
+
+.img-tour {
+	height: 260px;
+	width:100%;
+}
+.col-md-6 .img-tour {
+	height: 280px;
+}
+.col-md-5 .img-tour {
+	height: 120px;
+}
+.panel-body p.roboto{line-height: 1.7}
+
+/********************  FOOTER ********************/
+footer {
+	background-color: #315043;
+	padding: 20px 20px 40px 20px;
+}
+
+/********************** CONFIRMACION PDF ***********/
+.pdf {
+	font-family: 'Lato';
+	font-weight: 300;
+	margin-top:30px;
+}
+
+/*************** ERRORES FORMULARIOS **************/
+.has-error{
+	color: #f18280;
+}
+
+
+/******************SECTION ADMINISTRATION **************************/
+.full-width-container {
+	width:100%;
+}
+.logo {
+	display:block;
+	margin-bottom: 10px;
+}
+.left-menu {
+	background-color: #353535;
+	padding: 20px 10px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	height:100%;V
+	margin-bottom:-100%;
+	padding-bottom: 100%;
+}
+.tours-table {
+	margin-top:30px;
+}
+.admin-form{
+	background-color: #ffffff;
+	color: #848484;
+}
+.admin-form[readonly] {
+	background-color: #e6e6e6;
+}
+#bookingchart, #agencychart {
+    width:450px;
+    height: 300px;
+    margin-top: 120px;
+    }
+/******************* BOTON SWITCH *******************************/
+
+.onoffswitch {
+    position: relative; width: 35px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 16px; padding: 0; line-height: 16px;
+    border: 0px solid #FFFFFF; border-radius: 21px;
+    background-color: #9E9E9E;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 21px; margin: -2.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 25px;
+    border-radius: 21px;
+    box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #42A5F5;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #42A5F5;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+    background-color: #2196F3; 
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+/*----------------- PAGE PRELOADER ----------------------*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader_1.gif) center no-repeat #fff;
+}
+
+@media
+only screen  and (-webkit-min-device-pixel-ratio: 1.3),
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:200px),
+only screen and (min--moz-device-pixel-ratio: 1.3) and (min-width: 200px) ,
+only screen and (-o-min-device-pixel-ratio: 2/1)and (min-width: 200px),
+only screen and (min-device-pixel-ratio: 1.3) and (min-width: 200px),
+only screen and (min-resolution: 192dpi) and (min-width: 200px),
+only screen and (min-resolution: 1.1dppx) and (min-width: 200px),
+only screen and (max-width: 767px) {	
+
+	/************ FONTS ****************/
+	p {
+		line-height: 1.5;
+		font-size: 1.3em;
+		color: #888;
+	}
+    p.small {
+    	font-size: 75%;
+    }
+    .roboto-extra-big, .roboto-big{
+    	font-family: 'Roboto Slab', serif;
+    	font-size: 5em;
+    }
+    .roboto-big {
+        font-size:3em;
+    }
+    .lato-extra-big {
+    	font-size: 2.5em;
+    }
+	.search-movil-container >.fa >.fa-star {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+    .fa > .fa-star {
+    	margin:0px;
+    }
+	ul.mobile {
+		margin:7.5px 0px;
+	}
+	ul.mobile li {
+		float:left;
+		
+	}
+    .navbar-brand, .navbar-nav > li > a {
+    	font-size: 130%;
+    	font-family: 'Lato';
+    }
+    
+    
+	/************** NAVIGACION *************************/
+	.navbar {
+		min-height: 0px;
+	}
+	.navbar-brand {
+		height: 65px;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #ffffff;
+        padding: 7px 15px 7px 25px;
+    }
+    .navbar-nav .open .dropdown-menu{
+    	background-color: rgba(243, 237, 239, .80);
+    }
+    .nav .open > a, .nav .open>a:focus, .nav .open>a:hover{
+    	background-color: #c68501;
+    }
+    .navbar-brand > img{
+	    height:50px;
+	    margin-bottom: 30px;
+	    margin-top:-5px;
+	}
+
+    /******************** SEARCH HOTEL FORM *******************/
+    .addRoom {
+	    margin-top:10px;
+    }
+    .addRoomXs{
+    	margin-top:33px;
+    }
+    .room {
+	    padding-bottom: 5px;
+    }
+    .child_0, .child_1, .child_2 {
+        float:left;
+	    width: 50%;
+    }
+    label {
+    	margin-top:10px;
+    }
+    #filter-menu, #search-form {
+    	display: none;
+    }
+    #filter-menu  h3:first-child {
+    	display: none;
+    }
+    .search-movil-container .col-xs-4 {
+    	padding: 0px;
+    }
+    .search-movil-container .btn {
+    	padding: 3px 8px;
+    }
+    .search-movil-container h4{
+    	font-size: 14px;
+    	margin-top: 8px;
+    	margin-bottom: 0px;
+    }
+    .search-small-form a button {
+    	margin-bottom: 15px;
+    }
+
+    /************** SEARCH HOTEL RESULTS ************/    
+    .img-hotel{
+	    height: 100px;
+    }
+    .hotel-main-img {
+       height: 120px;
+       width: 300px;
+   }
+    .pull-down{
+    	height: 33px;
+    	width: 100%;
+    }     
+    .pull-down p {
+    	margin-top: 5px;
+    }
+    .pull-down .col-xs-5 {
+    	padding-right: 0px;
+    }
+    .pagination{
+    	margin: 5px 0;
+    }
+    p#price-slider-min, p#price-slider-max, p#price-slider-val{
+    	font-size: 130%;
+    }
+    /*********** ACOMODACIONES HOTEL / PAGO **********************/
+	.board {
+		padding-bottom: 10px;
+	}
+	.board-price {
+		min-height: 50px;
+	}
+	.board-price h4 {
+		margin-top: 17px;
+		font-size: 85%;
+	}
+	.board-container h5 {
+		font-size:90%;
+	}
+	.board-container .fa {
+		margin-left: -5px;
+	}
+    .cc-img{
+   	    height: 50px;
+   	    width: 300px;
+    }
+    /****************** LANDING PAGE *******************/
+    .full-page-container {
+    	min-height: 400px;
+    }
+
+	/****************** RESERVAR ***********************/
+	.board-detail {
+		padding-top: 10px;
+		margin-top: 15px;
+	}
+	.board-detail p.blue {
+		line-height: 1em;
+		font-size: 100%;
+	}
+    /****************** TOURS ************************/
+    .img-tour {
+    	height: 200px;
+    	margin-bottom: 0px;
+    }
+    .col-xs-8 p:first-child {
+    	margin-top:15px;
+    }
+    .panel-body p.roboto{
+    	font-size: 95%;
+    }
+
+    /********************* ADMINISTRACION **************/
+    .left-menu {
+    	padding: 0 10px;
+    	margin-bottom: 0px;
+    	padding-bottom: 0px;
+    }
+    #bookingchart, #agencychart {
+    	width:350px;
+    	height: 250px;
+        margin-top:40px;
+        border: 1px solid #0044cc;
+    }
+
+    /********* MISCELANEOUS MEDIA QUERY **********/
+    @media only screen and (min-width: 590px) {    	
+		.search-small-form .col-xs-6 {
+			width: 33.33333%;
+		}
+		.img-tour {
+			width:100%;
+			height:120px;
+		}
+		.col-xs-4 .img-responsive {
+			height: 100px;
+		}
+		.login .img-responsive {
+			height: 160px;
+		}
+	}
+	@media only screen and (min-width: 320px) and (max-width: 589px) {		
+		.tours-container .col-xs-6 {
+			width: 100%;
+		}
+		.mobile-tour .col-xs-4, .mobile-tour .col-xs-8 {
+			width:100%;
+		}
+		.col-xs-4 .img-responsive {
+			height: 100px;
+			width: 100%;
+		}
+		.login .img-responsive {
+			height: 180px;
+		}
+		.col-xs-4 .img-tour {
+			height: 150px;
+		}
+		.search-small-form .col-xs-6:first-child {
+			width: 100%;
+		}
+    }    
+}
+

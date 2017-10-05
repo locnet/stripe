@@ -33,3 +33,10 @@ Route::middleware(['App\Http\Middleware\AdminMiddleware'])->group(function () {
 
     Route::get('/admin/stripe/pagar/{token}/{email}', 'Admin\StripeController@makePayment');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

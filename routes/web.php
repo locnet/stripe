@@ -27,11 +27,11 @@ Route::middleware(['App\Http\Middleware\AdminMiddleware'])->group(function () {
     // admin	
     Route::get('/admin','Admin\MainController@index');
 
-    // stripe
+    // crear enlace pago con Stripe
     Route::get('/admin/stripe/nuevo', 'Admin\StripeController@index');
     Route::post('/admin/stripe/guardar', 'Admin\StripeController@store');
 
 });
 
-// pago
+// pago 
 Route::get('/pagar/{token}/{email}', 'Admin\StripeController@makePayment');

@@ -63,11 +63,11 @@ class StripeController extends Controller
     private function sendPaymentEmail($token) 
     {
 
-    	$link = Links::where('token',$token)->first();dd($link);
+    	$link = Links::where('token',$token)->first();
 
         if ($link->count() > 0) { 
 
-            Mail::send('email.pay_link', ['link' => $link], function($message)
+            Mail::send('email.pay_link', ['link' => $link], function($message) use ($link)
             {
                 $message->to($link->email, 'Romfly Viajes')
                         ->subject('Pago reserva avion');

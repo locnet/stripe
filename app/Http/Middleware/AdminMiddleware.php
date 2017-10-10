@@ -20,9 +20,9 @@ class AdminMiddleware
             if (Auth::user()->email === "locnetarganda@gmail.com") {
                 return $next($request);
             } else {
-                return view('errors/admin503');
+                return redirect('errors/admin503');
             }
         }
-        return redirect('/admin');
+        return redirect('/home');
     }
 }

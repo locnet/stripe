@@ -42,7 +42,7 @@
 		                            		<a href="{{ url('/admin/stripe/nuevo') }}">
 		                            	    Crear pago</a>
 		                                </li>
-		                            	<li @yield('tours')><a href="{{ url('/admin/tours/nuevo') }}">Buscar</a></li>
+		                            	<li @yield('todos')><a href="{{ url('/admin/stripe/todos') }}">Ver</a></li>
 		                            </ul>
 					            </li>
 					            <li @yield('ofertas')>
@@ -85,7 +85,7 @@
 					            	</a>
 					            </li>
 					            @if (Auth::user() && Auth::check())						                
-					                <li><a href="{{ url('/auth/logout') }}">
+					                <li><a href="{{ route('logout') }}">
 					                	<span class="fa fa-user"></span> Logout
 					                </a></li>
 					            @else

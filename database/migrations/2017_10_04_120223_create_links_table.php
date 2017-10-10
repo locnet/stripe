@@ -20,8 +20,9 @@ class CreateLinksTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->text('details');
-            $table->string('token');
+            $table->string('link_token');
             $table->float('quantity');
+            $table->string('status');
             $table->timestamps();
         });
     }

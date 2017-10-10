@@ -31,7 +31,29 @@ Route::middleware(['App\Http\Middleware\AdminMiddleware'])->group(function () {
     Route::get('/admin/stripe/nuevo', 'Admin\StripeController@index');
     Route::post('/admin/stripe/guardar', 'Admin\StripeController@store');
 
+    // ver
+    Route::get('/admin/stripe/todos', 'Admin\StripeController@getAll');
+    Route::get('/admin/stripe/link/{id}', 'Admin\StripeController@getLink');
+
 });
 
 // pago 
-Route::get('/pagar/{token}/{email}', 'Admin\StripeController@makePayment');
+Route::get('/pagar/{token}/{email}', 'PaymentController@index');
+Route::post('/confirm/{token}/{email}', 'PaymentController@validatePayment');
+
+Route::get('stripe',function(){
+	return view('stripe_public.main');
+});
+
+// erori 
+Route::get('errors/admin503', function() {
+	return view('errors.admin503');
+});
+
+// tests
+Route::get('test/mail/{id}',function($id){
+	return new App\Mail\LinkTestMailController($id);
+});
+Route::get('test/pay-link-mail/{id}',function($id){
+    return new App\Mail\MailController($id);
+});

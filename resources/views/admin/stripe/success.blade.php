@@ -9,7 +9,7 @@
         <li><p class="roboto">Cantidad: {{ $link->quantity }} €</p></li>
         <li><p class="roboto">Titular {{ $link->firstname .' ' .$link->lastname }}</p></li>
         <li><p class="roboto">Telefono {{ $link->phone }}</p></li>
-        <li><p class="roboto"><a href="{{ url('admin/stripe/pagar/'.$link->token.'/'.$link->email) }}">Enlace</a></p></li>
+        <li><p class="roboto"><a href="{{ url('pagar/'.$link->link_token.'/'.$link->email) }}">Enlace</a></p></li>
     </ul>	
         	
 @stop

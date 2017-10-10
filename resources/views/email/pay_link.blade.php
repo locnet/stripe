@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Confirma tu registro</title>
+<title>Pago seguro Romfly Viajes</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,15 +128,10 @@
                                             <td align="left" style="padding: 20px 0 0 0; 
                                             font-size: 16px; line-height: 25px; font-family: 
                                             Helvetica, Arial, sans-serif; color: #666666;" 
-                                            class="padding-copy">Para pagar la reserva haz click en en 
-                                        siguiente enlace:</td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left" style="padding: 20px 0 0 0; font-size: 16px;
-                                             line-height: 25px; font-family: Helvetica, Arial, sans-serif;
-                                             color: #666666;" class="padding-copy">
-                                             
-                                             <a href="{{ url('/pagar/'.$link->token.'/'.$link->email) }}">enlace</a>.                                             
+                                            class="padding-copy">
+                                                Para pagar la reserva que has hecho en Romfly Viajes
+                                                haz click <a href="{{ url('/pagar/'.$link->token.'/'.$link->email) }}">
+                                                aqui.</a>
                                             </td>
                                         </tr>
                                         <tr>

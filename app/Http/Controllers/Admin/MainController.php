@@ -11,7 +11,6 @@ class MainController extends Controller
 	
 	public function index()
 	{
-		$finalized = Links::status('succeeded')->get();
-	    return view('admin.main', compact('finalized'));
+	    return view('admin.main');
 	}
 }

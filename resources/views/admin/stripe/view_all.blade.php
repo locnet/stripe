@@ -19,7 +19,7 @@
 	    	<td><p class="roboto">{{ $link->firstname . " ".$link->lastname }}</p></td>
 	    	<td><p class="roboto">{{ $link->email }}</p></td>
 	    	<td><p class="roborto">{{ $link->created_at }}</p></td>
-	    	<td><p class="roboto">{{ $link->status }}</p></td>
+	    	<td><p class="roboto">{{ $link->status ?: 'n/d' }}</p></td>
 	    	<td><p class="roboto">{{ number_format($link->quantity,2) }} €</p></td>
 	    	<td><a href="{{ url('admin/stripe/link/'.$link->id) }}">Ver</a></td>
 	    </tr>

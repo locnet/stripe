@@ -32,7 +32,7 @@ class PaymentConfirmed extends Mailable
     public function build()
     {
         
-        return $this->from(env('MAIL_USERNAME')
+        return $this->from(env('MAIL_USERNAME'))
                     ->with([ 
                         'user' => (ucfirst($this->link->firstname).' '.ucfirst($this->link->lastname)),
                         'quantity' => $link->quantity, ])

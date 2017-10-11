@@ -66,7 +66,7 @@ class PaymentController extends Controller
         	$this->makePayment($payData);
         	return view('stripe_public.succeeded', compact('link'));
         } else {
-        	$message = "Este paga ya ha sido procesado una vez";
+        	$message = "Este pago ya ha sido procesado una vez";
         	return view('errors.exception')->withMessage($message);
         }
     	

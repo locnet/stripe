@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Stripe;
 use App\Links;
 use App\Tokens;
+use Mail;
+use App;
 
 class PaymentController extends Controller
 {

@@ -63,7 +63,7 @@ class StripeController extends Controller
 
 	        if ($link = Links::firstOrCreate($validatedData))  {
 	        	// el enlace de pago se ha creado corectamente
-	        	// mandamos el email con los datos del pago, solo en produccion
+	        	// mandamos el email con los datos del pago, solo si estamos en produccion
 	        	if (env('APP_URL') != 'http://localhost') {
 				    // The environment isn't local
 				    $this->sendPaymentEmail($validatedData['link_token']);

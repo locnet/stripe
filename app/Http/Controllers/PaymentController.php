@@ -132,15 +132,12 @@ class PaymentController extends Controller
     	if ( !is_null($link) ) { 
 			// email para el cliente
 
-            Mail::to($link->email)
-            	->subject('Pago finalizado')
-            	->send(new PaymentConfirmed($link));
+            Mail::to($link->email)->send(new PaymentConfirmed($link));
            
 
             // email para el administrator
             
         	Mail::to($link->email)
-        		->subject('Reserva pagada')
         		->send(new SendNotification($link));
 
         

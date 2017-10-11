@@ -34,8 +34,8 @@ class SendNotification extends Mailable
         return $this->from(env('MAIL_USERNAME'))
                     ->with([
                             'user' => ucfirst($this->link->firstname).' '.ucfirst($this->link->lastname),
-                            'quantity' => $link->quantity,
-                            'details'  => $link->details ,])
+                            'quantity' => $this->link->quantity,
+                            'details'  => $this->link->details ,])
                     ->subject('Reserva pagada')
                     ->markdown('email.notification');
     }

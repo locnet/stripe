@@ -130,7 +130,7 @@
                                             Helvetica, Arial, sans-serif; color: #666666;" 
                                             class="padding-copy">
                                                 Para pagar la reserva que has hecho en Romfly Viajes
-                                                haz click <a href="{{ url('/pagar/'.$link->token.'/'.$link->email) }}">
+                                                haz click <a href="{{ url('/pagar/'.$link->link_token.'/'.$link->email) }}">
                                                 aqui.</a>
                                             </td>
                                         </tr>

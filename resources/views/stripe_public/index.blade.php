@@ -11,7 +11,7 @@
                     {!! csrf_field() !!}
                     <script
                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_test_xq28spRMPZ1WBbGMfqcacdOG"
+                        data-key="pk_test_fdToAPNcRWphChqZWFA9990A"
                         data-amount="{{ ($data->quantity * 100) }}"
                         data-name="Romfly Viajes"
                         data-description="Aplicacion de pago Romfly Viajes"

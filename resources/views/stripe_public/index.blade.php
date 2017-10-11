@@ -18,6 +18,7 @@
                         data-description="Aplicacion de pago Romfly Viajes"
                         data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                         data-locale="es"
+                        data-label="Pagar con la tarjeta bancaria"
                         data-currency="eur">
                     </script>
                 </form>

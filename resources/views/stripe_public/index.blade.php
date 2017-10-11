@@ -3,9 +3,10 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 col-md-offset-2 col-xs-12">
-            <h3 class="lato-100 text-center">Pasarela pago seguro Romfly Viajes</h3>
-            <h4 class="rotobo">Vas ha pagar la suma de {{ $data->quantity }} € en un entorno seguro. Los datos de tu tarjeta de
-            credito seran encriptados a traves de SSL entre el servidor y la pagina web.</h4>
+            <h1 class="lato-100 text-center dark-blue">Pasarela pago seguro Romfly Viajes</h1>
+            <h3 class="lato-300">Vas ha pagar la suma de {{ $data->quantity }} € en un entorno seguro, los datos de tu tarjeta de
+            credito seran encriptados a traves de SSL entre el servidor y la pagina web.</h3>
+            <h4 class="lato-300 blue">Si estas de acuerdo con la cantidad a pagar haz click en el boton de abajo.</h4>
             <div class="text-center" style="padding: 50px 0 50px 0"> 
                 <form action="{{ url('/confirm/'.$data['link_token'].'/'.$data['email'] ) }}" method="POST">
                     {!! csrf_field() !!}

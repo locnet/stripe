@@ -8,6 +8,8 @@ use App\Links;
 use App\Tokens;
 use Mail;
 use App;
+use App\Mail\PaymentConfirmed;
+use App\Mail\SendNotification;
 
 class PaymentController extends Controller
 {
@@ -130,19 +132,17 @@ class PaymentController extends Controller
     	if ( !is_null($link) ) { 
 			// email para el cliente
 
-            Mail::send('email.confirmation', ['link' => $link], function($message) use ($link)
-            {
-                $message->to($link->email, 'Romfly Viajes')
-                        ->subject('Pago reserva avion');
-            });
+            Mail::to($link->email)
+            	->subject('Pago finalizado')
+            	->send(new PaymentConfirmed($link));
+           
 
             // email para el administrator
+            
+        	Mail::to($link->email)
+        		->subject('Reserva pagada')
+        		->send(new SendNotification($link));
 
-            Mail::send('email.notification', ['link' => $link], function($message) use ($link)
-            {
-                $message->to('locnetarganda@gmail.com', 'Romfly Viajes')
-                        ->subject('Reserva pagada');
-            });
         
         } else {
             return view('errors.exception')->withMessage('Ha ocurido un error inesperado, por favor 

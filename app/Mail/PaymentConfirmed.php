@@ -33,8 +33,9 @@ class PaymentConfirmed extends Mailable
     {
         
         return $this->from(env('MAIL_USERNAME')
-                    ->with(['user' => ucfirst($this->link->firstname).' '.ucfirst($this->link->lastname),
-                            'quantity' => $link->quantity])
+                    ->with([ 
+                        'user' => (ucfirst($this->link->firstname).' '.ucfirst($this->link->lastname)),
+                        'quantity' => $link->quantity ])
                     ->subject('Pago finalizado corectamente')
                     ->markdown('email.confirmation');
     }

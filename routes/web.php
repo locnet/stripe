@@ -52,6 +52,11 @@ Route::get('errors/admin503', function() {
 	return view('errors.admin503');
 });
 
+/*----------------------------------------------------------|
+|             TEST ROUTES                                   |
+|-----------------------------------------------------------|
+*/
+
 // test email
 Route::get('test/mail/{id}',function($id){
 	return new App\Mail\LinkTestMailController($id);
@@ -67,3 +72,7 @@ Route::get('test/confirmation-mail/{id}',function($id){
     return new App\Mail\ConfirmationTestMailController($id);
 });
 
+// notificacion admin depues del pago
+Route::get('test/notification-mail/{id}',function($id){
+    return new App\Mail\NotificationTestMailController($id);
+});

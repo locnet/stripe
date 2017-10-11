@@ -1,6 +1,7 @@
 @extends('stripe_public.main')
 
 @section('content')
+<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 col-xs-12">
             <h3 class="lato-100 text-center">Pasarela pago seguro Romfly Viajes</h3>
@@ -33,5 +34,6 @@
             <p class="roboto">Para llevar a cabo el pago electrónico, Romfly Viajes utiliza la pasarea de pago Stripe. Todos los datos proporcionados a Romfly Viajes, son debidamente cifrados para garantizar la máxima seguridad y confidencialidad de los mismos, alojándose en un servidor seguro certificado según el protocolo "Secure Socket Layer" (SSL).</p>
             <p class="roboto">En ningún caso se almacenarán por parte de Romfly Viajes los datos de tarjetas proporcionados por los Clientes a través de la pasarela de pago, y únicamente se conservarán mientras se efectúa la compra, se realiza el pago y hasta transcurrido el período de desistimiento, con el fin de poder devolverle las cantidades económicas correspondientes.</p>
         </div>
-    </div>          
+    </div>
+</div>         
 @stop

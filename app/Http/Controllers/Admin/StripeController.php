@@ -96,8 +96,7 @@ class StripeController extends Controller
                 $message->to($link->email, 'Romfly Viajes')
                         ->subject('Pago reserva avion');
             });
-
-            return view('auth.success_message', compact('user'));
+        
         } else {
             return view('errors.exception')->withMessage('Ha ocurido un error inesperado, por favor 
                 vuelve al correo electronico y intentalo otra vez. Si el error persiste mandanos un 

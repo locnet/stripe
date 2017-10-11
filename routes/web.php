@@ -52,11 +52,18 @@ Route::get('errors/admin503', function() {
 	return view('errors.admin503');
 });
 
-// tests
+// test email
 Route::get('test/mail/{id}',function($id){
 	return new App\Mail\LinkTestMailController($id);
 });
+// email con datos de pago
 Route::get('test/pay-link-mail/{id}',function($id){
     return new App\Mail\MailController($id);
+});
+
+
+// confirmacion despues del pago
+Route::get('test/confirmation-mail/{id}',function($id){
+    return new App\Mail\ConfirmationTestMailController($id);
 });
 

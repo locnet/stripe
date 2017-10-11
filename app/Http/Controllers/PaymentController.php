@@ -102,10 +102,50 @@ class PaymentController extends Controller
 
             Tokens::create(['stripe_token' => $payData['stripeToken'], 'links_id' => $link->id]);
 
+            // enviamos el email de confirmacion del pago
+
+            // solo si estamos en produccion
+            if (env('APP_URL') != 'http://localhost') {
+			    // The environment isn't local
+			    $this->sendConfirmacionEmail($validatedData['link_token']);
+			}
+
         } else {
         	$message =  "Ha ocurrido el siguiente error en el pago, status: ". $charge['status'];
         	return view('errors.exception')->withMessage($message);
         }
     	
+    }
+
+    /**
+    * manda los emails de confirmacion tanto al cliente como al administratod
+    * @param string $link_token, el token unico de la tabla Links 
+    */
+    private function sendConfirmacionEmail($link_token)
+    {
+    	$link = Links::where('link_token', $link_token)->first();
+
+    	if ( !is_null($link) ) { 
+			// email para el cliente
+
+            Mail::send('email.confirmation', ['link' => $link], function($message) use ($link)
+            {
+                $message->to($link->email, 'Romfly Viajes')
+                        ->subject('Pago reserva avion');
+            });
+
+            // email para el administrator
+
+            Mail::send('email.notification', ['link' => $link], function($message) use ($link)
+            {
+                $message->to('locnetarganda@gmail.com', 'Romfly Viajes')
+                        ->subject('Reserva pagada');
+            });
+        
+        } else {
+            return view('errors.exception')->withMessage('Ha ocurido un error inesperado, por favor 
+                vuelve al correo electronico y intentalo otra vez. Si el error persiste mandanos un 
+                email al office@romfly.com.');
+        }
     }
 }

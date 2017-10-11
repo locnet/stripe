@@ -107,7 +107,7 @@ class PaymentController extends Controller
             // solo si estamos en produccion
             if (env('APP_URL') != 'http://localhost') {
 			    // The environment isn't local
-			    $this->sendConfirmacionEmail($validatedData['link_token']);
+			    $this->sendConfirmacionEmail($link->link_token);
 			}
 
         } else {
